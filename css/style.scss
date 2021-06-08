@@ -142,7 +142,66 @@ ul {
     border-radius: 20px;
     margin-bottom: 50px;
 }
-
+.card-list__item:nth-child(1) {
+    background-image: url(../img/vis-small-9.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(2) {
+    background-image: url(../img/vis-small-8.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(3) {
+    background-image: url(../img/vis-small-1.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(4) {
+    background-image: url(../img/vis-small-7.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(5) {
+    background-image: url(../img/vis-small-6.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(6) {
+    background-image: url(../img/vis-small-2.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(7) {
+    background-image: url(../img/vis-small-5.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(8) {
+    background-image: url(../img/vis-small-4.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(9) {
+    background-image: url(../img/vis-small-3.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
+.card-list__item:nth-child(10) {
+    background-image: url(../img/vis-small-3.svg);
+    background-size: 256px 200px;
+    background-repeat: no-repeat;
+    background-position:  40px  32px;
+}
 .card-list__item-headline {
     font-family: Inter;
     font-style: normal;
@@ -202,7 +261,7 @@ ul {
 }
 
 .item-list__item-link {
-    ont-family: Inter;
+    font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

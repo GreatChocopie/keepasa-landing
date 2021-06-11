@@ -1,3 +1,31 @@
+$general-font-family: Inter;
+$secondary-font-family: Roboto;
+
+$headline-1-font-size: 120px;
+$headline-2-font-size: 72px;
+$headline-3-font-size: 19px;
+$headline-4-font-size: 16px;
+
+$headline-big-font-weight: 800;
+$headline-middle-font-weight: 700;
+
+
+$paragraph-big-font-size: 24px;
+$paragraph-norm-font-size: 16px;
+$paragraph-small-font-size: 14px;
+
+$paragraph-font-weight: 400;
+
+$mob-headline-1-font-size: 50px;
+$mob-headline-2-font-size: 50px;
+
+$mob-paragraph-big-font-size: 20px;
+
+
+
+
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -15,19 +43,23 @@ input[type="radio"].visually-hidden {
 
 body {
     color: #FFFFFF;
-   
-    font-family: Inter, Roboto;
+
+    font-family: $general-font-family, $secondary-font-family;
     background-color: #161412;
-    
-    font-size: 14px;
+
+    font-size: $paragraph-small-font-size;
     line-height: normal;
     padding: 0;
     margin: 0;
 }
+
 .white {
-    color: #222222;;
-    background-color: #FFFFFF;;
+    color: #222222;
+  
+    background-color: #FFFFFF;
+  
 }
+
 a {
     text-decoration: none;
 }
@@ -76,21 +108,22 @@ ul {
 }
 
 .header__logo-text {
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: $headline-middle-font-weight;
+    font-size: $paragraph-big-font-size;
     line-height: 110%;
     color: #FFFFFF;
 }
-.white  .header__logo-text {
+
+.white .header__logo-text {
     color: #000000;
 }
 
 .header__tumbler {
     width: 51px;
     height: 30px;
-    
+
 }
 
 .tumbler {
@@ -104,11 +137,14 @@ ul {
     background: #353738;
     border-radius: 50px;
     cursor: pointer;
-  
+
 }
+
 .tumbler:hover {
-    background-color:  #565151;;
+    background-color: #565151;
+    ;
 }
+
 .tumbler::before {
     content: "";
     position: absolute;
@@ -128,21 +164,25 @@ ul {
 }
 
 
-#checkbox:checked ~.tumbler {
+#checkbox:checked~.tumbler {
     justify-content: flex-start;
     background-color: #F5F6F7;
-    
+
 }
-#checkbox:checked ~.tumbler:hover {
-   
-    background-color:  #CAC5C4;;
-    
+
+#checkbox:checked~.tumbler:hover {
+
+    background-color: #CAC5C4;
+    ;
+
 }
-#checkbox:checked ~.tumbler::before {
-    background-color: #FFFFFF;;
-    
+
+#checkbox:checked~.tumbler::before {
+    background-color: #FFFFFF;
+    ;
+
     background-image: url(../img/light.svg);
-    
+
 }
 
 
@@ -160,14 +200,15 @@ ul {
 .block__headline-big {
     padding: 0;
     margin: 0 0 30px 0;
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
-    font-weight: 800;
-    font-size: 120px;
+    font-weight: $headline-big-font-weight;
+    font-size: $headline-1-font-size;
     line-height: 105%;
     color: #FFFFFF;
 }
-.white  .block__headline-big {
+
+.white .block__headline-big {
     color: #222222;
 }
 
@@ -175,14 +216,15 @@ ul {
     max-width: 875px;
     padding: 0;
     margin: 0 0 75px 0;
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: $paragraph-big-font-size;
     line-height: 140%;
     color: #E5E5E5;
 }
-.white  .block__list{
+
+.white .block__list {
     color: #7C7C7C;
 }
 
@@ -198,14 +240,15 @@ ul {
 .block__headline-middle {
     padding: 0;
     margin: 0 0 30px 0;
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
-    font-weight: 800;
-    font-size: 72px;
+    font-weight: $headline-big-font-weight;
+    font-size: $headline-2-font-size;
     line-height: 105%;
     color: #FFFFFF;
 }
-.white  .block__headline-middle{
+
+.white .block__headline-middle {
     color: #222222;
 }
 
@@ -227,7 +270,11 @@ ul {
     border-radius: 20px;
     margin-bottom: 50px;
 }
-.white .card-list__item {background: #F2F2F2;}
+
+.white .card-list__item {
+    background: #F2F2F2;
+}
+
 .card-list__item:nth-child(1) {
     background-image: url(../img/vis-small-9.svg);
     background-size: 256px 200px;
@@ -299,34 +346,36 @@ ul {
 }
 
 .card-list__item-headline {
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
+    font-size: $headline-3-font-size;
     line-height: 23px;
     color: #FFFFFF;
     padding: 0;
     margin: 0 0 6px 0;
 }
+
 .white .card-list__item-headline {
-    
-    color:  #000000;
-   
+
+    color: #000000;
+
 }
 
 .card-list__item-text {
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: $headline-4-font-size;
     line-height: 140%;
     color: #FFFFFF;
     opacity: 0.5;
     padding: 0;
     margin: 0;
 }
+
 .white .card-list__item-text {
-    color:  #000000;
+    color: #000000;
 
 }
 
@@ -352,10 +401,10 @@ ul {
 .item-list__headline {
     padding: 0;
     margin: 0 0 32px 0;
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: $paragraph-norm-font-size;
     line-height: 150%;
     color: #7B7B7B;
 }
@@ -366,14 +415,15 @@ ul {
 }
 
 .item-list__item-link {
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: $paragraph-norm-font-size;
     line-height: 150%;
     text-decoration-line: underline;
     color: #FFFFFF;
 }
+
 .white .item-list__item-link {
     color: #000000;
 }
@@ -393,10 +443,10 @@ ul {
     width: 100%;
     padding: 0;
     margin: 0 0 25px 0;
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: $paragraph-norm-font-size;
     line-height: 150%;
     color: #7B7B7B;
 }
@@ -419,14 +469,15 @@ ul {
 }
 
 .footer__list-link {
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: $paragraph-norm-font-size;
     line-height: 150%;
     text-decoration-line: underline;
     color: #FFFFFF;
 }
+
 .white .footer__list-link {
     color: #000000;
 }
@@ -434,10 +485,10 @@ ul {
 .footer__pridaction {
     padding: 0;
     margin: 0;
-    font-family: Inter;
+    font-family: $general-font-family;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: $paragraph-small-font-size;
     line-height: 150%;
     color: #838383;
 }
@@ -496,12 +547,15 @@ ul {
         width: 100%;
         background: #FFFFFF;
     }
+
     .white .header__menu-button::before {
         background: #222222;
     }
+
     .white .header__menu-button::after {
         background: #222222;
     }
+
     .block__wrapper {
         display: flex;
         flex-direction: column;

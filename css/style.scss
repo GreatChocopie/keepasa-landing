@@ -142,7 +142,7 @@ ul {
 
 .tumbler:hover {
     background-color: #565151;
-    ;
+   
 }
 
 .tumbler::before {
@@ -173,13 +173,13 @@ ul {
 #checkbox:checked~.tumbler:hover {
 
     background-color: #CAC5C4;
-    ;
+ 
 
 }
 
 #checkbox:checked~.tumbler::before {
     background-color: #FFFFFF;
-    ;
+    
 
     background-image: url(../img/light.svg);
 
@@ -218,7 +218,7 @@ ul {
     margin: 0 0 75px 0;
     font-family: $general-font-family;
     font-style: normal;
-    font-weight: normal;
+    font-weight: $paragraph-font-weight;
     font-size: $paragraph-big-font-size;
     line-height: 140%;
     color: #E5E5E5;
@@ -365,7 +365,7 @@ ul {
 .card-list__item-text {
     font-family: $general-font-family;
     font-style: normal;
-    font-weight: normal;
+    font-weight: $paragraph-font-weight;
     font-size: $headline-4-font-size;
     line-height: 140%;
     color: #FFFFFF;
@@ -417,7 +417,7 @@ ul {
 .item-list__item-link {
     font-family: $general-font-family;
     font-style: normal;
-    font-weight: normal;
+    font-weight: $paragraph-font-weight;
     font-size: $paragraph-norm-font-size;
     line-height: 150%;
     text-decoration-line: underline;
@@ -471,7 +471,7 @@ ul {
 .footer__list-link {
     font-family: $general-font-family;
     font-style: normal;
-    font-weight: normal;
+    font-weight: $paragraph-font-weight;
     font-size: $paragraph-norm-font-size;
     line-height: 150%;
     text-decoration-line: underline;
@@ -487,7 +487,7 @@ ul {
     margin: 0;
     font-family: $general-font-family;
     font-style: normal;
-    font-weight: normal;
+    font-weight: $paragraph-font-weight;
     font-size: $paragraph-small-font-size;
     line-height: 150%;
     color: #838383;
